@@ -1,0 +1,42 @@
+:root{
+    --color1 : #3e4042 ;
+    --color2: #0dcaf0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.title{
+    position: relative;
+}
+.title:hover{
+    position: relative;
+}
+.title:hover::before{
+    position: absolute;
+    content: attr(data-text);
+    background-color: #1a1b1b;
+    color: #fff;
+    top: -50px;
+    left: -20px;
+    width: max-content;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    padding: 0px 10px;
+}
+
+.scroletop{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
